@@ -53,4 +53,9 @@ function setValue(element) {
 	}
 }
 
-window.onload = ()=>document.addEventListener('contextmenu', (ev)=>ev.preventDefault());
+function blockContextMenu(ev) {
+	const { platform: { type } } = bowser.parse(navigator.userAgent);
+	if (type == "mobile") ev.preventDefault();
+}
+
+window.onload = ()=>document.addEventListener('contextmenu', blockContextMenu);
