@@ -53,3 +53,4 @@ function setValue(element) {
 	}
 }
 
+window.onload = ()=>document.addEventListener('contextmenu', (ev)=>ev.preventDefault());
