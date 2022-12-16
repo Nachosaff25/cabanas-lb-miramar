@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "sync": "node sync-git.js"
-  },
-  "dependencies": {
-    "shelljs": "^0.8.5"
-  }
-}
